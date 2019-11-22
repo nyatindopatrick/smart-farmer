@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/index';
 import Home from './components/Home/index';
 import About from './components/About/About';
+import YouthCorner from './components/youthCorner/youthCorner';
 import './app.css';
 import './card.css';
 import Footer from './components/Footer/Footer';
@@ -15,6 +16,7 @@ const App = () => {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' exact component={About} />
+        <Route path='/youthcorner' exact component={YouthCorner} />
       </Switch>
       <Footer />
     </Router>

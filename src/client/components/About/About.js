@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -24,7 +24,9 @@ const About = () => {
                   </div>
                   <div className='timeline-panel'>
                     <div className='timeline-heading'>
-                      <h4 className='subheading'>Changing farming perspective</h4>
+                      <h4 className='subheading'>
+                        Changing farming perspective
+                      </h4>
                     </div>
                     <div className='timeline-body'>
                       <p className='text-muted'>
@@ -98,16 +100,15 @@ const About = () => {
                   </div>
                 </li>
                 <li className='timeline-inverted'>
-                <Link to="/register">
-                <div className='timeline-image'>
-                    <h4>
-                      Be Part <br />
-                      Of Our <br />
-                      Story!
-                    </h4>
-                  </div>
-                </Link>
-
+                  <Link to='/register'>
+                    <div className='timeline-image'>
+                      <h4>
+                        Be Part <br />
+                        Of Our <br />
+                        Story!
+                      </h4>
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -118,7 +119,11 @@ const About = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-12 text-center'>
-              <h2 className='section-heading' style={{color:"#0000 !important"}} id='team'>
+              <h2
+                className='section-heading'
+                style={{ color: '#0000 !important' }}
+                id='team'
+              >
                 Our Amazing Team
               </h2>
             </div>
@@ -149,7 +154,7 @@ const About = () => {
             <div className='col-sm-4'>
               <div className='team-member'>
                 <img
-                  src='http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg'
+                  src='https://scontent.fnbo1-1.fna.fbcdn.net/v/t1.0-1/c201.33.1238.1238a/s160x160/67927587_2406787432933574_3032428089876414464_o.jpg?_nc_cat=102&_nc_ohc=1qSFwFkXyQcAQne_aFHT90t3pvGPKgYJs_YKSMttpkDadnP-3L132Jm6g&_nc_ht=scontent.fnbo1-1.fna&oh=465562f53126d441b07618e5edf5e963&oe=5E8BCB5B'
                   className='img-responsive img-circle'
                   alt=''
                 />

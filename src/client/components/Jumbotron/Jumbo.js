@@ -23,7 +23,7 @@ const JumbotronPage = () => {
         ></div>
         <div className='content-center'>
           <div className='container'>
-            <h1 className='title'>Changing Farming Perspective.</h1>
+            <h1 style={{color:"#ffff !important"}}>Changing Farming Perspective.</h1>
           </div>
         </div>
       </div>

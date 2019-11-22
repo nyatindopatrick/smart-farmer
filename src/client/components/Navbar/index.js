@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav class='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
-      <div class='container'>
-        <a class='navbar-brand' href='#'>
+    <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
+      <div className='container'>
+        <a className='navbar-brand' href='#'>
           Smart Farmer
         </a>
         <button
-          class='navbar-toggler'
+          className='navbar-toggler'
           type='button'
           data-toggle='collapse'
           data-target='#navbarResponsive'
@@ -17,32 +17,47 @@ const Navbar = () => {
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
-          <span class='navbar-toggler-icon'></span>
+          <span className='navbar-toggler-icon'></span>
         </button>
-        <div class='collapse navbar-collapse' id='navbarResponsive'>
-          <ul class='navbar-nav ml-auto'>
-            <li class='nav-item active'>
-              <Link class='nav-link' to='/'>
+        <div className='collapse navbar-collapse' id='navbarResponsive'>
+          <ul className='navbar-nav ml-auto'>
+            <li className='nav-item active'>
+              <Link className='nav-link' to='/'>
                 Home
               </Link>
             </li>
-            <li class='nav-item'>
-              <Link class='nav-link' to='/about'>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/about'>
                 About
               </Link>
             </li>
-            <li class='nav-item'>
-              <Link class='nav-link' to='/services'>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/services'>
                 Services
               </Link>
             </li>
-            <li class='nav-item'>
-              <Link class='nav-link' to='/events'>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/resources'>
+                Resources
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/events'>
                 Events
               </Link>
             </li>
-            <li class='nav-item'>
-              <Link class='nav-link' to='/contact'>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/register'>
+                Register
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/login'>
+                Login
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/contact'>
                 Contact
               </Link>
             </li>

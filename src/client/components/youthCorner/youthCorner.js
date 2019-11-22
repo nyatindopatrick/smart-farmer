@@ -89,7 +89,7 @@ const YouthCorner = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <h4>Role models</h4>
-                        <h4 className="subheading">Improve agriculture’s image</h4>
+                        <h4 className="subheading">Improve agriculture’s image by sharing success stories</h4>
                         <p className="text-muted">Farming is rarely portrayed in the media as a young person’s game and 
                         can be seen as outdated, unprofitable and hard work. Greater awareness of the benefits of agriculture 
                         as a career needs to be built amongst young people, in particular opportunities for greater market 

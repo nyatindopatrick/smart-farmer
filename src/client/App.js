@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/index';
 import Home from './components/Home/index';
 import About from './components/About/About';
 import YouthCorner from './components/youthCorner/youthCorner';
+import Events from './components/Events/Events';
 import './app.css';
 import './card.css';
 import Footer from './components/Footer/Footer';
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/' exact component={Home} />
         <Route path='/about' exact component={About} />
         <Route path='/youthcorner' exact component={YouthCorner} />
+        <Route path='/events' exact component={Events} />
       </Switch>
       <Footer />
     </Router>

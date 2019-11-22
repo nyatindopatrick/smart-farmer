@@ -4,6 +4,8 @@ import Home from './components/Home/index';
 import About from './components/About/About';
 import YouthCorner from './components/youthCorner/youthCorner';
 import Events from './components/Events/Events';
+import Contact from "./components/Contact/Contact";
+import Services from './components/Services/Services';
 import './app.css';
 import './card.css';
 import Footer from './components/Footer/Footer';
@@ -19,6 +21,8 @@ const App = () => {
         <Route path='/about' exact component={About} />
         <Route path='/youthcorner' exact component={YouthCorner} />
         <Route path='/events' exact component={Events} />
+        <Route path='/contact' exact component={Contact} />
+        <Route path='/services' exact component={Services} />
       </Switch>
       <Footer />
     </Router>

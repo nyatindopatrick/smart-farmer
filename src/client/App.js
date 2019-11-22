@@ -11,6 +11,11 @@ import Maps from './components/Maps/Maps'
 import './app.css';
 import './card.css';
 import Footer from './components/Footer/Footer';
+import Resources from './components/Resources/resources';
+import Register from './components/Register/Register';
+import Login from './components/Login/Login';
+import Profile from './components/Profile/Profile'
+import Sms from './components/Profile/Sms'
 
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
@@ -28,6 +33,11 @@ const App = () => {
         <Route path='/services/tracking' exact component={Tracking} />
         <Route path='/services/maps' exact component={Maps} />
 
+        <Route path='/resources' exact component={Resources} />
+        <Route path='/register' exact component={Register} />
+        <Route path='/login' exact component={Login} />
+        <Route path='/profile' exact component={Profile} />
+        <Route path='/sms' exact component={Sms} />
       </Switch>
       <Footer />
     </Router>

@@ -702,46 +702,7 @@ img {
   padding: 24px 0;
 }
 
-.footer.footer-default {
-  background-color: #f2f2f2;
-}
 
-.footer nav {
-  display: inline-block;
-  float: left;
-}
-
-.footer ul {
-  margin-bottom: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer ul li {
-  display: inline-block;
-}
-
-.footer ul li a {
-  color: inherit;
-  padding: 0.5rem;
-  font-size: 0.8571em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.footer ul li a:hover {
-  text-decoration: none;
-}
-
-.footer .copyright {
-  font-size: 0.8571em;
-}
-
-.footer:after {
-  display: table;
-  clear: both;
-  content: ' ';
-}
 
 .landing-page .header {
   height: 100vh;
@@ -1133,7 +1094,7 @@ img {
 }
 
 .footer {
-  background: rgb(24, 96, 67);
+  background: #37b1b5;
   color: white;
 }
 .footer .links ul {
@@ -1155,15 +1116,17 @@ img {
   transition: color 0.2s;
 }
 .footer .about-company a:hover {
-  color: #4180CB;
+  color: rgb(0, 0, 0);
 }
 .footer .location i {
   font-size: 18px;
 }
 .footer .copyright p {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgb(255, 255, 255);
 }
-
+.footer p{
+  color: #ffff !important
+}
 
 .service-tab-section {
   position: relative;
@@ -1599,7 +1562,7 @@ section#contact {
 }
 
 section#contact .section-heading {
-  color: #fff;
+  color: #fff !important;
 }
 
 section#contact .form-group {

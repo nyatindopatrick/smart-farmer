@@ -6,6 +6,8 @@ import YouthCorner from './components/youthCorner/youthCorner';
 import Events from './components/Events/Events';
 import Contact from "./components/Contact/Contact";
 import Services from './components/Services/Services';
+import Tracking from './components/Tracking/Tracking';
+import Maps from './components/Maps/Maps'
 import './app.css';
 import './card.css';
 import Footer from './components/Footer/Footer';
@@ -23,6 +25,9 @@ const App = () => {
         <Route path='/events' exact component={Events} />
         <Route path='/contact' exact component={Contact} />
         <Route path='/services' exact component={Services} />
+        <Route path='/services/tracking' exact component={Tracking} />
+        <Route path='/services/maps' exact component={Maps} />
+
       </Switch>
       <Footer />
     </Router>

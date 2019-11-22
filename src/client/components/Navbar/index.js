@@ -49,10 +49,11 @@ const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/youthcorner'>
                 Youth Corner
-              <Link className='nav-link' to='/register'>
-                Register
               </Link>
             </li>
+            <Link className='nav-link' to='/register'>
+                Register
+              </Link>
             <li className='nav-item'>
               <Link className='nav-link' to='/login'>
                 Login

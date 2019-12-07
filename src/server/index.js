@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose
   .connect(
-    'mongodb+srv://nyatindopatrick:dogobigy97@riders-ecfkm.mongodb.net/users?retryWrites=true&w=majority',
+    'mongodb://localhost:27017/smartfarm',
     { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log('DB connected sucessfully'))

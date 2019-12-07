@@ -1,74 +1,59 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-  return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
-      <div className='container'>
-        <a className='navbar-brand' href='#'>
-          Smart Farmer
-        </a>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-toggle='collapse'
-          data-target='#navbarResponsive'
-          aria-controls='navbarResponsive'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div className='collapse navbar-collapse' id='navbarResponsive'>
-          <ul className='navbar-nav ml-auto'>
-            <li className='nav-item active'>
-              <Link className='nav-link' to='/'>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/about'>
-                About
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/services'>
-                Services
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/resources'>
-                Resources
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/events'>
-                Events
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/youthcorner'>
-                Youth Corner
-              </Link>
-            </li>
-            <Link className='nav-link' to='/register'>
-                Register
-              </Link>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/login'>
-                Login
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/contact'>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
-};
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+ 
+  },
+  menuButton: {
+    marginRight: theme.spacing(2)
+  },
+  title: {
+    flexGrow: 1
+  }
+}));
 
-export default Navbar;
+export default function ButtonAppBar() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <AppBar className="farmNav" color='inherit' position='static'>
+        <Toolbar>
+          <Typography variant='h6' className={classes.title}>
+            <span className="smart">SMART</span> <span className="farmer">FARMER</span>
+          </Typography>
+          <Link to='/'>
+            <Button color='inherit'>Home</Button>
+          </Link>          <Link to='/about'>
+            <Button color='inherit'>About</Button>
+          </Link>          <Link to='/services'>
+            <Button color='inherit'>Services</Button>
+          </Link>          <Link to='/events'>
+            <Button color='inherit'>Events</Button>
+          </Link>
+          <Link to='/youthcorner'>
+            <Button color='inherit'>Youth Corner</Button>
+          </Link>
+          <Link to='/register'>
+            <Button color='inherit'>Register</Button>
+          </Link>
+          <Link to='/login'>
+            <Button color='inherit'>Login</Button>
+          </Link>
+          <Link to='/contact'>
+            <Button color='inherit'>Contact Us</Button>
+          </Link>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}

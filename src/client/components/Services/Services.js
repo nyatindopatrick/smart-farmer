@@ -24,7 +24,7 @@ export default function Services() {
                                 <p className="card-text">We track the farm products from the time you buy seeds to the time the 
                                 products are ready for sale.</p><br />
                                 <a href="/services/tracking" target="_blank" 
-                        classNameName="stretched-link btn">Visit</a>
+                        className="stretched-link btn">Visit</a>
                             </div>
                         </div>
                     </div>
